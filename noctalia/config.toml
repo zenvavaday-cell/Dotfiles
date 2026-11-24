@@ -1,0 +1,23 @@
+# Noctalia declarative base config.
+# UI changes are written to ~/.local/state/noctalia/settings.toml and take
+# priority over this file.
+
+[shell]
+# Noctalia provides the polkit authentication agent.
+polkit_agent = true
+
+# Lock after 10 minutes, turn the panel off after 12, suspend after 30.
+[idle.behavior.lock]
+enabled = true
+timeout = 600
+action = "lock"
+
+[idle.behavior.screen-off]
+enabled = true
+timeout = 720
+action = "screen_off"
+
+[idle.behavior.lock-and-suspend]
+enabled = true
+timeout = 1800
+action = "lock_and_suspend"
