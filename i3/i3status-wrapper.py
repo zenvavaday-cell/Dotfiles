@@ -45,7 +45,7 @@ def fmt_rate(value):
     return f"{value:.0f}B"
 
 
-def traffic_block():
+def traffic_block(): # Added this comment just to get a github streak btw.
     iface = wifi_interface()
     if not iface:
         return None
